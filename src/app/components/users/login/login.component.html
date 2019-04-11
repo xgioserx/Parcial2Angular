@@ -1,0 +1,10 @@
+<div>
+  <input type="text" placeholder="Correo electronico" #userEmail required />
+  <input type="password" placeholder="Contraseña" #userPassword required />
+  <button (click)="authService.login(userEmail.value,userPassword.value)">
+    Login
+  </button> 
+  <button (click)="authService.googleLogin()">
+    Google 
+  </button>
+</div>
